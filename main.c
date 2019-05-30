@@ -126,7 +126,7 @@ bool step(Api *api)
     ipc_real_t currentDirection = getCurrentDirection(api);
     ipc_real_t newDirection = getFoodDirection(api);
 
-    api->log(std::to_string(newDirection).c_str());
+    //api->log(std::to_string(newDirection).c_str());
 
     if(newDirection > 0) {
         api->angle = std::min(newDirection, api->getSelfInfo()->max_step_angle);
